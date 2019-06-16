@@ -1,0 +1,85 @@
+main {
+    background-color: #151515;
+    overflow: hidden;
+}
+
+#about::after {
+    content: '';
+    width: 0.7px;
+    height: 175px;
+    background-color: $primary-white;
+    position: absolute;
+    bottom: -250px;
+    right: 50vw;
+}
+
+#about {
+    margin: 2vh 0 20vh;
+    width: 100%;
+    @include coco-light(3px);
+    h4 {
+        font-family: 'portrait_scriptbounce';
+        font-size: 12vw;
+        text-align: center;
+        background: $gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-bottom: 4%;
+    }
+    .about-me {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .profile-pic {
+            width: 30%;
+        }
+        .about-description {
+            width: 60%;
+            margin-left: 5%;
+            background-color: #151515;
+            align-content: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+}
+
+.profile-pic img {
+    border: 7px solid $primary-white;
+    border-radius: 12px;
+}
+
+.about-description p {
+    padding-bottom: 2%;
+    line-height: 1.5;
+    i {
+        font-size: 1.3rem;
+    }
+    span {
+        position: relative;
+        z-index: 0;
+        font-family: $coco-regular;
+        &::after {
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(90deg, rgba(176,127,229,0.4) 0%, rgba(150,215,200,0.4) 100%); 
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -2;
+        }
+        a:hover {
+            letter-spacing: 4px;
+        }
+    }
+
+}
+
+.about-description h5 {
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+    font-family: $coco-regular;
+}

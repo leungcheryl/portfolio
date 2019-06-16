@@ -8,9 +8,13 @@ const lineDrawing = anime({
     loop: true
   });
 
-  const typed = new Typed('.typed', {
-    stringsElement: '.typed-strings'
+  let typed = new Typed('.typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed: 120,
+    startDelay: 1200,
+		backSpeed: 50
   });
+
 
 $(document).ready(function(){
 

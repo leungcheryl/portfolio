@@ -1,0 +1,5 @@
+@mixin coco-light ($letter-spacing) {
+    font-family: 'coco_gothiclight', sans-serif;
+    letter-spacing: $letter-spacing;
+    color: $primary-white;
+}

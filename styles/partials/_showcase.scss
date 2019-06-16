@@ -1,0 +1,7 @@
+#showcase {
+    width: 100%;
+    position: relative;
+}
+.arrows::before {
+    @include horizontal-line;
+}

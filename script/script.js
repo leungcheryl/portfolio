@@ -15,27 +15,27 @@ const lineDrawing = anime({
 		backSpeed: 50
   });
 
+  function toggleNav() {
+    $('.nav-icon').toggleClass('open');
+    if ($('.nav-icon').hasClass('open')) {
+      setTimeout(function(){
+        $('.nav-content').toggleClass('visible-content')
+      },400);
+    } else {
+      $('.nav-content').toggleClass('visible-content')
+    }
+    $('.nav-overlay').toggleClass('visible');
+    $('.visible').css('width', '100%');
+  }
+
+  $('li').click(function(){
+    $('.visible').css('width', '0');
+    toggleNav();
+  });
 
 $(document).ready(function(){
-
-    function toggleNav() {
-      $('.nav-icon').toggleClass('open');
-
-      if ($('.nav-icon').hasClass('open')) {
-        setTimeout(function(){
-          $('.nav-content').toggleClass('visible-content')
-        },400);
-      } else {
-        $('.nav-content').toggleClass('visible-content')
-      }
-      $('.nav-overlay').toggleClass('visible');
-      $('.visible').css('width', '100%');
-    }
-
     $('.nav-icon').click(function(){
       toggleNav();
     });
-
-
-    
+  
 });

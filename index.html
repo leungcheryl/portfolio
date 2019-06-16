@@ -55,16 +55,16 @@
           <nav>  
             <ul>
               <li>
-                <a href="#">about me</a>
+                <a href="#about">about me</a>
               </li>
               <li>
-                <a href="#">showcase</a>
+                <a href="#showcase">showcase</a>
               </li>
               <li>
-                <a href="#">skills</a>
+                <a href="#skills">skills</a>
               </li>
               <li>
-                <a href="#">contact me</a>
+                <a href="#contact">contact me</a>
               </li>
             </ul>
           </nav>
@@ -85,19 +85,25 @@
             </div>
         </div>
       </div>
+
     </header>
     <main>
+
       <div class="wrapper">
+        <div class="arrows">
+          <span class="scroll-arrows one"></span>
+          <span class="scroll-arrows two"></span>
+          <span class="scroll-arrows three"></span>
+        </div>
+        <section id="about">
 
-        <div id="about">
-
-          <h4>about me</h4>
+          <h4 class="section-title">about me</h4>
           <div class="about-me">
             <div class="profile-pic">
               <img src="assets/profile-pic.jpg" alt="Professional Headshot Photo of Cheryl Leung">
             </div>
             <div class="about-description">
-              <h5 class="typewriter line">Hi there! I'm Cheryl Leung.</h5>
+              <h5 class="about-intro typewriter">Hi there! I'm Cheryl Leung.</h5>
               <p>I am currently a <span><a href="#skills">Front-End Developer</a></span> located in Toronto, Ontario.</p>
               <p>I aim to always make the best, beautiful and accessible <span><a href="#showcase">websites</a></span> with great user experience.</p>
               <p>In my previous employments, I have always thrived working with people + clients/customers - skills that I bring with me working as a developer.</p>
@@ -106,8 +112,20 @@
             </div>
           </div>
 
+        </section>
+
+        
+        <div class="arrows">
+          <span class="scroll-arrows one"></span>
+          <span class="scroll-arrows two"></span>
+          <span class="scroll-arrows three"></span>
+        </div>        
+        <section id="showcase">
+
+          <h4 class="section-title">showcase</h4>
+
         </div>
-      </div>
+      </section>
 
     </main>
     <script src="script/lib-animejs/anime.min.js"></script>

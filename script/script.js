@@ -10,10 +10,12 @@ const lineDrawing = anime({
 
   let typed = new Typed('.typed', {
     stringsElement: '#typed-strings',
-    typeSpeed: 120,
+    typeSpeed: 110,
     startDelay: 1000,
-		backSpeed: 50
+		backSpeed: 40
   });
+
+  
 
   function toggleNav() {
     $('.nav-icon').toggleClass('open');
@@ -24,18 +26,32 @@ const lineDrawing = anime({
     } else {
       $('.nav-content').toggleClass('visible-content')
     }
-    $('.nav-overlay').toggleClass('visible');
-    $('.visible').css('width', '100%');
+    $('.nav-overlay').toggleClass('visible-nav');
+    $('.visible-nav').css('width', '100%');
   }
 
   $('li').click(function(){
-    $('.visible').css('width', '0');
+    $('.visible-nav').css('width', '0');
     toggleNav();
   });
+
 
 $(document).ready(function(){
     $('.nav-icon').click(function(){
       toggleNav();
     });
     AOS.init();
+
+    const scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 1200
+    });
+
+let controller = new ScrollMagic.Controller();
+new ScrollMagic.Scene({
+        duration: 800,  
+        // offset: 50 ,
+        triggerElement: ".about-intro"  // start this scene after scrolling for 50px
+    })
+    .addTo(controller)
+    .setClassToggle(".about-intro", "typewriter");
 });

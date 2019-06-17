@@ -352,8 +352,8 @@ header {
   -webkit-text-fill-color: transparent; }
 
 .typewriter {
-  -webkit-animation: typewriter 2.4s steps(44) 2s 1 normal both, blinkTextCursor 1000ms steps(44) infinite normal;
-  animation: typewriter 2.4s steps(44) 2s 1 normal both, blinkTextCursor 1000ms steps(44) infinite normal;
+  -webkit-animation: typewriter 2.4s steps(44) 0.5s 1 normal both, blinkTextCursor 1000ms steps(44) infinite normal;
+  animation: typewriter 2.4s steps(44) 0.5s 1 normal both, blinkTextCursor 1000ms steps(44) infinite normal;
   border-right: 3px solid rgba(255, 255, 255, 0.9);
   white-space: nowrap;
   overflow: hidden;
@@ -606,7 +606,7 @@ header {
   bottom: 0;
   left: 0; }
 
-.visible {
+.visible-nav {
   height: 100vh;
   width: 0;
   position: fixed;
@@ -751,7 +751,7 @@ main {
   padding-bottom: 4%; }
 
 #about {
-  margin: 5vh 0 20vh;
+  margin: 5vh 0 15%;
   height: 100vh;
   width: 100%;
   font-family: 'coco_gothiclight', sans-serif;
@@ -783,6 +783,18 @@ main {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column; }
+
+.invisible {
+  -webkit-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  opacity: 0.0; }
+
+.visible {
+  -webkit-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  opacity: 1.0; }
 
 .profile-pic img {
   border: 7px solid #F2F2F2;

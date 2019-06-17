@@ -15,7 +15,7 @@ main {
 }
 
 #about {
-    margin: 5vh 0 20vh;
+    margin: 5vh 0 15%;
     height: 100vh;
     width: 100%;
     @include coco-light(3px);
@@ -38,6 +38,16 @@ main {
     }
 
 }
+
+.invisible {
+    transition: opacity 0.5s ease;
+    opacity: 0.0;
+  }
+  
+  .visible {
+    transition: opacity 0.5s ease;
+    opacity: 1.0;
+  }
 
 .profile-pic img {
     border: 7px solid $primary-white;

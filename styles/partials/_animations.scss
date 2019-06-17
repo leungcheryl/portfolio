@@ -1,11 +1,12 @@
 .typewriter {
-    animation: typewriter 2.4s steps(44) 2s 1 normal both,
+    animation: typewriter 2.4s steps(44) 0.5s 1 normal both,
                blinkTextCursor 1000ms steps(44) infinite normal;
     border-right: 3px solid rgba(255,255,255,.9);
     white-space: nowrap;
     overflow: hidden;
-    transform: translateY(-50%);   
+    transform: translateY(-50%);
 }
+
 
 @keyframes typewriter {
     from{width: 0;}

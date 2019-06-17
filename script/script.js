@@ -11,7 +11,7 @@ const lineDrawing = anime({
   let typed = new Typed('.typed', {
     stringsElement: '#typed-strings',
     typeSpeed: 120,
-    startDelay: 1200,
+    startDelay: 1000,
 		backSpeed: 50
   });
 
@@ -37,5 +37,5 @@ $(document).ready(function(){
     $('.nav-icon').click(function(){
       toggleNav();
     });
-  
+    AOS.init();
 });

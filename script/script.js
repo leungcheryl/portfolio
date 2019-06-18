@@ -24,7 +24,7 @@ const lineDrawing = anime({
         $('.nav-content').toggleClass('visible-content')
       },400);
     } else {
-      $('.nav-content').toggleClass('visible-content')
+      $('.nav-content').toggleClass('visible-content');
     }
     $('.nav-overlay').toggleClass('visible-nav');
     $('.visible-nav').css('width', '100%');
@@ -43,7 +43,7 @@ $(document).ready(function(){
     AOS.init();
 
     const scroll = new SmoothScroll('a[href*="#"]', {
-      speed: 1200
+      speed: 1100
     });
 
 let controller = new ScrollMagic.Controller();

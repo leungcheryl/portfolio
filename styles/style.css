@@ -205,9 +205,9 @@ img {
 
 a {
   text-decoration: none;
-  -webkit-transition: 0.5s all ease;
-  -o-transition: 0.5s all ease;
-  transition: 0.5s all ease;
+  -webkit-transition: 0.7s all ease;
+  -o-transition: 0.7s all ease;
+  transition: 0.7s all ease;
   color: white; }
 
 .wrapper {
@@ -289,6 +289,26 @@ body {
   background-position: fixed;
   color: #F2F2F2; }
 
+.arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-bottom: 1%; }
+
+.arrow-header {
+  position: absolute;
+  bottom: -250px; }
+
 .typed {
   font-family: 'coco_gothiclight';
   letter-spacing: 14px;
@@ -365,13 +385,13 @@ header {
   from {
     width: 0; }
   to {
-    width: 470px; } }
+    width: 90%; } }
 
 @keyframes typewriter {
   from {
     width: 0; }
   to {
-    width: 470px; } }
+    width: 90%; } }
 
 @-webkit-keyframes blinkTextCursor {
   from {
@@ -645,7 +665,7 @@ header {
   cursor: pointer;
   right: 30px; }
   .nav-icon:hover {
-    right: 35px;
+    right: 40px;
     padding-right: 2%; }
 
 .nav-icon span {
@@ -722,22 +742,6 @@ main {
   background-color: #151515;
   overflow: hidden; }
 
-.arrows {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  margin-bottom: 1%; }
-
 .section-title {
   font-family: 'portrait_scriptbounce';
   font-size: 12vw;
@@ -751,7 +755,7 @@ main {
   padding-bottom: 4%; }
 
 #about {
-  margin: 5vh 0 15%;
+  margin: 12vh 0 15vh;
   height: 100vh;
   width: 100%;
   font-family: 'coco_gothiclight', sans-serif;
@@ -766,7 +770,7 @@ main {
     justify-content: center;
     width: 100%; }
     #about .about-me .profile-pic {
-      width: 30%; }
+      width: 35%; }
     #about .about-me .about-description {
       width: 60%;
       margin-left: 5%;
@@ -784,27 +788,40 @@ main {
       -ms-flex-direction: column;
       flex-direction: column; }
 
-.invisible {
-  -webkit-transition: opacity 0.5s ease;
-  -o-transition: opacity 0.5s ease;
-  transition: opacity 0.5s ease;
-  opacity: 0.0; }
+.resume {
+  text-align: center;
+  margin-top: 3%;
+  letter-spacing: 0px; }
+  .resume a {
+    position: relative;
+    border: 2px solid white;
+    padding: 1.5% 2% 1%;
+    font-family: "coco_gothicregular", sans-serif;
+    letter-spacing: 2px; }
 
-.visible {
-  -webkit-transition: opacity 0.5s ease;
-  -o-transition: opacity 0.5s ease;
-  transition: opacity 0.5s ease;
-  opacity: 1.0; }
+.btn.res {
+  background-color: rgba(150, 215, 200, 0.6);
+  color: black; }
+
+.btn.cont {
+  background-color: rgba(176, 127, 229, 0.6);
+  color: black; }
+
+.btn:hover {
+  letter-spacing: 1.5px;
+  background: rgba(255, 245, 238, 0.685);
+  color: black; }
 
 .profile-pic img {
   border: 7px solid #F2F2F2;
   border-radius: 12px; }
 
 .about-description p {
-  padding-bottom: 2.5%;
-  line-height: 1.5; }
+  padding-bottom: 3.5%;
+  line-height: 1.4;
+  font-size: 0.8rem; }
   .about-description p i {
-    font-size: 1.3rem; }
+    font-size: 1rem; }
   .about-description p span {
     position: relative;
     z-index: 0;
@@ -833,8 +850,8 @@ main {
   line-height: 0.8; }
 
 .about-description h5 {
-  font-size: 1.5rem;
-  margin-bottom: 3%;
+  font-size: 2.2vw;
+  margin: 3% 0;
   font-family: "coco_gothicregular", sans-serif; }
 
 #showcase {
@@ -887,6 +904,15 @@ main {
     background: linear-gradient(90deg, #b07fe5 0%, #96d7c8 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
+
+.langs ~ p {
+  font-size: 0.9rem; }
+
+.live-github {
+  margin-top: 5%;
+  text-align: center; }
+  .live-github a {
+    letter-spacing: 0; }
 
 .show-case-arrow {
   display: -webkit-box;

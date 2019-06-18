@@ -71,7 +71,11 @@
           </nav>
         </div>
       </div>
-
+      <div class="arrows arrow-header">
+        <span class="scroll-arrows one"></span>
+        <span class="scroll-arrows two"></span>
+        <span class="scroll-arrows three"></span>
+      </div>
       <div class="view-portfolio">
         <h3 class="scroll-text">scroll for</h3>
         <h3>portfolio</h3>
@@ -91,11 +95,7 @@
     <main>
 
       <div class="wrapper">
-        <div class="arrows">
-          <span class="scroll-arrows one"></span>
-          <span class="scroll-arrows two"></span>
-          <span class="scroll-arrows three"></span>
-        </div>
+
         <section id="about">
 
           <h4 class="section-title">about me</h4>
@@ -105,17 +105,22 @@
             </div>
             <div class="about-description">
               <h5 class="about-intro">Hi there! My name is Cheryl Leung.</h5>
-              <p>I am a <span><a href="#skills">Front-End Developer</a></span> located in Toronto.<br> I aim to always make the best, beautiful and accessible <span><a href="#showcase">websites</a></span> with great user experience.</p>
-              <p>In my previous employments, I have always thrived working with people + clients/customers - skills that I bring with me, working as a developer.</p>
-              <p>I thrive to learn, and am continously looking forward to expanding my personal and <span><a href="#skills">technical skillset</a></span>.</p>
-              <p>Also: I love dogs more than anything. <i class="fas fa-dog" aria-hidden="true"></i></p>
-              
+              <p><i class="fas fa-laptop-code"></i> I am a <span><a href="#skills">Front-End Developer</a></span> located in Toronto, Canada.<br> I aim to always make great, functional, aesthetically pleasing and accessible <span><a href="#showcase">websites</a></span> that also provide great UX/UI experience.</p>
+              <p><i class="fas fa-user-tie"></i> In my <span><a href="#resume">previous employments</a></span>, I have always thrived working with people (colleagues, clients & customers). With many years of client/corporate work experience, I have developed a great set of personable soft skills which I bring with me working as a developer (alongside strong technical skills).</p>
+              <p><i class="fas fa-book-reader"></i> I continously thrive to learn, and I am always looking forward to expanding my personal and <span><a href="#skills">technical skillset</a></span>.</p>
+              <p><i class="fas fa-dog" aria-hidden="true"></i> Also: I love dogs more than anything. </p>
+
+              <div class="resume" data-aos="fade-left" data-aos-duration="1000">
+                <p>Want to know more? </p> 
+                <a class="btn res" href="">resume</a> // 
+                <a href="#contact" class="btn cont">contact me</a> 
+            </div>
             </div>
           </div>
 
         </section>
 
-        <p class="keep-scrolling">Keep scrolling to see a selection of work I have coded - all made with love. &hearts;</p>
+        <p class="keep-scrolling">Keep scrolling to see a selection of work I have coded ; all made with love. &hearts;</p>
         <div class="arrows">
           <span class="scroll-arrows one"></span>
           <span class="scroll-arrows two"></span>
@@ -126,14 +131,14 @@
           <h4 class="section-title">showcase</h4>
 
           <div class="showcase-container">
-            <div data-aos="fade-down-right" data-aos-duration="1700" class="showcase-pic">
+            <div data-aos="fade-right" data-aos-duration="1700" class="showcase-pic">
               <img src="assets/psd.png" alt="">
             </div>
-            <div data-aos="fade-down-left" data-aos-duration="1700" class="showcase-description">
+            <div data-aos="fade-left" data-aos-duration="1700" class="showcase-description">
               <h5>woo commerce</h5>
               <p class="langs"><span>PSD CONVERSION</span> | <span>HTML & CSS</span></p>
-              <p>Shopping website created from PSD >> converted into full-bleed layout website using HTML and CSS.</p>
-              <p>Flexbox used with overlays and hover states on all interactions.</p>
+              <p>Shopping website created from PSD >> converted into a full-bleed layout website using HTML and CSS.</p>
+              <p>Flexbox was used with overlays and hover states on all interactions.</p>
             </div>
           </div>
           <div class="show-case-arrow">
@@ -147,8 +152,8 @@
             <div data-aos="fade-right" data-aos-duration="1500" class="showcase-description">
               <h5>fashion and art</h5>
               <p class="langs"><span>HTML</span> | <span>CSS & SASS</span> | <span>SKETCH</span></p>
-              <p>Design and Layout created by me.</p>
-              <p>Multi-page website with a fashion and art theme, creating layouts using photos from Chanel at Paris Fashion Week and Kanye West's Yeezy Spring Fashion Line. </p>
+              <p>Design, Layout and Functionality - Created and Coded by me.</p>
+              <p>A multi-page website with a fashion and art theme, creating layouts using photos from Chanel at Paris Fashion Week and Kanye West's Yeezy Spring Fashion Line. </p>
               <p>Responsive across all devices.</p>
             </div>
             <div data-aos="fade-left" data-aos-duration="1500" class="showcase-pic">
@@ -168,10 +173,11 @@
               <div data-aos="fade-left" data-aos-duration="1500"class="showcase-description">
                 <h5>cute killer robots</h5>
                 <p class="langs"><span>HTML</span> | <span>CSS & SASS</span> | <span>SKETCH</span> | <span>JAVASCRIPT</span> | <span>JQUERY</span></p>
-                <p>Design and Layout created by me.</p>
+                <p>Design, Layout and Functionality - Created and Coded by me.</p>
                 <p>A hangman game with a killer robot theme. Guess the word before the robot gets fully built, or else it will turn into a killer robot!</p> 
                 <p>A fully functional game with animations and jQuery elements dynamically added to the DOM. </p>
                 <p>Responsive across all devices.</p>
+                <p class="live-github"><a href="">View Live</a> // <a href="">Github</a></p>
               </div>
           </div>
           <div class="show-case-arrow">
@@ -184,8 +190,8 @@
             <div data-aos="fade-right" data-aos-duration="1500" class="showcase-description">
               <h5>animal collectives</h5>
               <p class="langs"><span>HTML & CSS</span> | <span>JAVASCRIPT & JQUERY</span> | <span>REST APIs</span> | <span>PAIRED PROGRAMMING</span></p>
-              <p>Have you ever wondered what the collective name of an animal was? </p>
-              <p>Website designed and created with fellow developer <a href="http://alexdodd.ca" target="_blank">Alex Dodd</a> - Pixabay API and a team-created .json file API were called using AJAX to generate the collective name of the typed in animal as well as a background image of the animal.</p>
+              <p>Have you ever wondered what the collective name of an animal was?</p>
+              <p>Website designed and created with fellow developer <a href="http://alexdodd.ca" target="_blank">Alex Dodd</a> - calling two APIs to generate the collective name of the typed in animal, as well as a background image of the animal.</p>
               <p>Responsive across all devices. </p>
             </div>
             <div data-aos="fade-left" data-aos-duration="1500" class="showcase-pic">
@@ -204,10 +210,9 @@
             </div>
             <div data-aos="fade-left" data-aos-duration="1500" class="showcase-description">
               <h5>the movie lifeguard</h5>
-              <p class="langs"><span>REACT</span> | <span>REST APIs</span> | <span>JAVASCRIPT</span> | <span>HTML</span></p>
-              <p>Created and designed with myself in mind - as i refuse to watch a movie which a dog dies in it. </p>
-              <p>Using the REACT framework, calling three AXIOS calls to call the doesthedogdie API and the movie DB API. </p>
-              <p>This single page application allows to search a movie and will return a result to let you know if a dog dies in the movie, along with a poster of the movie.</p>
+              <p class="langs"><span>REACT</span> | <span>REST APIs;AXIOS</span> | <span>JAVASCRIPT</span> | <span>HTML</span></p>
+              <p>Created and designed by me with myself in mind - as i refuse to watch a movie which a dog dies in it. :( </p>
+              <p>Using REACT framework, this single page application allows to search a movie and will return a result to let you know if a dog dies in the movie, along with a poster of the movie.</p>
             </div>
           </div>
           <div class="show-case-arrow">
@@ -217,14 +222,14 @@
           </div>
 
           <div class="showcase-container">     
-            <div data-aos="fade-up-right" data-aos-duration="1500" class="showcase-description">
+            <div data-aos="fade-right" data-aos-duration="1500" class="showcase-description">
               <h5>average joe</h5>
               <p class="langs"><span>REACT</span> | <span>REST APIs</span> | <span>JAVASCRIPT</span> | <span>HTML</span> | <span>TEAM/GROUP PROGRAMMING</span></p>
-              <p>Agency style: this single page REACT application was created from a given client brief.</p>
+              <p>Agency style: this single page REACT application was created from a provided client brief.</p>
               <p>Coded and designed with fellow developers Fazaa Ahmed, Adam Pachulski and Jeffrey Xu.</p>
               <p>MapQuest API is called to generate directions, static maps and the 'middle choice' (average joe) of the results.</p>
             </div>
-            <div data-aos="fade-up-left" data-aos-duration="1500" class="showcase-pic">
+            <div data-aos="fade-left" data-aos-duration="1500" class="showcase-pic">
               <img src="assets/average-joe.png" alt="">
             </div>
           </div>

@@ -40,6 +40,18 @@
     }
 }
 
+.langs ~ p {
+    font-size: 0.9rem;
+}
+
+.live-github {
+    margin-top: 5%;
+    text-align: center;
+    a {
+        letter-spacing: 0;
+    }
+}
+
 .show-case-arrow {
     display: flex;
     flex-direction: column;

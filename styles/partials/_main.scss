@@ -4,8 +4,19 @@ body {
     color: $primary-white;
 }
 
+.arrows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 1%;
+}
 
- .typed {
+.arrow-header {
+    position: absolute;
+    bottom: -250px;
+}
+.typed {
     font-family: 'coco_gothiclight';
     letter-spacing: 14px;
     margin: 0 auto;

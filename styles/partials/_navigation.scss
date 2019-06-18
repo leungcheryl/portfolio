@@ -69,13 +69,12 @@
     transition: .5s ease-in-out;
     cursor: pointer;
     right: 30px;
+
     &:hover {
-        right: 35px;
+        right: 40px;
         padding-right: 2%;
     }
 }
-
-
   
 .nav-icon span {
     display: block;

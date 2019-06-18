@@ -388,13 +388,13 @@ header {
   from {
     width: 0; }
   to {
-    width: 80%; } }
+    width: 75%; } }
 
 @keyframes typewriter {
   from {
     width: 0; }
   to {
-    width: 80%; } }
+    width: 75%; } }
 
 @-webkit-keyframes blinkTextCursor {
   from {
@@ -799,7 +799,7 @@ main {
       -ms-flex-direction: column;
       flex-direction: column; }
     #about .about-me .about-description {
-      width: 55%;
+      width: 57%;
       margin-left: 5%;
       background-color: #151515;
       -ms-flex-line-pack: center;
@@ -817,14 +817,15 @@ main {
 
 .resume {
   text-align: center;
-  margin-top: 10%;
-  letter-spacing: 0.5px;
-  width: 100%; }
+  margin-top: 8%;
+  letter-spacing: 0.5px; }
   .resume p {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    font-family: "coco_gothicregular", sans-serif;
+    letter-spacing: 6px; }
   .resume a {
     border: 2px solid white;
-    padding: 2% 3%;
+    padding: 0.5% 2%;
     font-family: "coco_gothicregular", sans-serif;
     letter-spacing: 2px;
     margin: 2%; }
@@ -847,7 +848,7 @@ main {
   border-radius: 12px; }
 
 .about-description p {
-  padding-top: 2%;
+  padding-top: 2.5%;
   line-height: 1.8;
   font-size: 0.9rem; }
   .about-description p i {
@@ -876,7 +877,7 @@ main {
   width: 20%;
   text-align: center;
   margin: 0 auto;
-  padding-bottom: 2%;
+  padding: 8% 0 3%;
   line-height: 0.9; }
 
 .about-description h5 {

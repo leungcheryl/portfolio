@@ -25,7 +25,7 @@ main {
             flex-direction: column;
         }
         .about-description {
-            width: 55%;
+            width: 57%;
             margin-left: 5%;
             background-color: #151515;
             align-content: center;
@@ -39,15 +39,17 @@ main {
 
 .resume {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 8%;
     letter-spacing: 0.5px;
-    width: 100%;
+    // width: 35%;
     p {
         margin-bottom: 30px;
+        font-family: $coco-regular;
+        letter-spacing: 6px;
     }
     a {
         border: 2px solid white;
-        padding: 2% 3%;
+        padding: 0.5% 2%;
         font-family: $coco-regular;
         letter-spacing: 2px;
         margin: 2%;
@@ -78,7 +80,7 @@ main {
 }
 
 .about-description p {
-    padding-top: 2%;
+    padding-top: 2.5%;
     line-height: 1.8;
     font-size: 0.9rem;
     i {
@@ -103,7 +105,7 @@ main {
     width: 20%;
     text-align: center;
     margin: 0 auto;
-    padding-bottom: 2%;
+    padding: 8% 0 3%;
     line-height: 0.9;
 }
 

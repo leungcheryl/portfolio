@@ -11,7 +11,7 @@ const lineDrawing = anime({
   let typed = new Typed('.typed', {
     stringsElement: '#typed-strings',
     typeSpeed: 110,
-    startDelay: 1000,
+    startDelay: 500,
 		backSpeed: 40
   });
 

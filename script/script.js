@@ -49,8 +49,7 @@ $(document).ready(function(){
 let controller = new ScrollMagic.Controller();
 new ScrollMagic.Scene({
         duration: 800,  
-        // offset: 50 ,
-        triggerElement: ".about-intro"  // start this scene after scrolling for 50px
+        triggerElement: ".about-intro" 
     })
     .addTo(controller)
     .setClassToggle(".about-intro", "typewriter");

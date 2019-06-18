@@ -385,13 +385,13 @@ header {
   from {
     width: 0; }
   to {
-    width: 90%; } }
+    width: 72%; } }
 
 @keyframes typewriter {
   from {
     width: 0; }
   to {
-    width: 90%; } }
+    width: 72%; } }
 
 @-webkit-keyframes blinkTextCursor {
   from {
@@ -791,7 +791,7 @@ main {
 .resume {
   text-align: center;
   margin-top: 3%;
-  letter-spacing: 0px; }
+  letter-spacing: 0.5px; }
   .resume a {
     position: relative;
     border: 2px solid white;
@@ -819,7 +819,7 @@ main {
 .about-description p {
   padding-bottom: 3.5%;
   line-height: 1.4;
-  font-size: 0.8rem; }
+  font-size: 0.9rem; }
   .about-description p i {
     font-size: 1rem; }
   .about-description p span {
@@ -847,10 +847,10 @@ main {
   text-align: center;
   margin: 0 auto;
   padding-bottom: 2%;
-  line-height: 0.8; }
+  line-height: 0.9; }
 
 .about-description h5 {
-  font-size: 2.2vw;
+  font-size: 2.1vw;
   margin: 3% 0;
   font-family: "coco_gothicregular", sans-serif; }
 

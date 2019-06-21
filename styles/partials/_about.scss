@@ -1,15 +1,19 @@
 main {
-    background-color: #151515;
+    background-color: hsl(0, 0%, 8%);
     overflow: hidden;
+}
+
+.section-about {
+    margin: 20vh 0 6% 0;
 }
 
 .section-title {
     @include h4-header;
-    padding-bottom: 6%;
 }
 
 #about {
-    margin: 12vh 0 15vh;
+    display: inline-block;
+    margin: 10vh 0 0;
     height: 120vh;
     width: 100%;
     @include coco-light(3px);
@@ -39,34 +43,35 @@ main {
 
 .resume {
     text-align: center;
-    margin-top: 8%;
+    margin-top: 5%;
     letter-spacing: 0.5px;
-    // width: 35%;
     p {
         margin-bottom: 30px;
         font-family: $coco-regular;
-        letter-spacing: 6px;
+        letter-spacing: 5px;
+        color: lightsteelblue;
     }
     a {
         border: 2px solid white;
         padding: 0.5% 2%;
-        font-family: $coco-regular;
         letter-spacing: 2px;
-        margin: 2%;
+        margin: 1%;
+        font-size: 1.2rem;
     }
 
 }
 
-.btn.res {
+.btn.first {
     background-color: rgba(150,215,200,0.6);
     color: black;
 }
 
-.btn.cont {
+.btn.second {
     background-color: rgba(176,127,229,0.6);
     color: black;
 
 }
+
 
 .btn:hover {
     letter-spacing: 2.5px;
@@ -89,12 +94,13 @@ main {
     span {
         position: relative;
         z-index: 0;
-        font-family: $coco-regular;
+        
         &::after {
             @include gradient-underline(8px);
         }
         a:hover {
-            letter-spacing: 4px;
+            letter-spacing: 3.5px;
+            font-family: $coco-regular;
         }
     }
 
@@ -105,8 +111,9 @@ main {
     width: 20%;
     text-align: center;
     margin: 0 auto;
-    padding: 8% 0 3%;
+    padding: 10% 0 1%;
     line-height: 0.9;
+    color: white;
 }
 
 .about-description h5 {
@@ -114,3 +121,4 @@ main {
     margin: 3% 0 0;
     font-family: $coco-regular;
 }
+

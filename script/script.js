@@ -15,7 +15,6 @@ const lineDrawing = anime({
 		backSpeed: 40
   });
 
-  
 
   function toggleNav() {
     $('.nav-icon').toggleClass('open');
@@ -43,7 +42,7 @@ $(document).ready(function(){
     AOS.init();
 
     const scroll = new SmoothScroll('a[href*="#"]', {
-      speed: 1100
+      speed: 800
     });
 
 let controller = new ScrollMagic.Controller();

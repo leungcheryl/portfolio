@@ -1,0 +1,26 @@
+
+.arrow-with-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1%;
+    .vertical-line {
+        border-right:rgba(255,255,255,0.7) 1px solid;
+        height: 170px;
+    }
+}
+
+.arrow-main {
+    position: absolute;
+    bottom: -300px;
+    left: 50vw;
+}
+
+.show-case-arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+

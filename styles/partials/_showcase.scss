@@ -1,9 +1,5 @@
 #showcase {
     width: 100%;
-    position: relative;
-}
-.arrows::before {
-    @include horizontal-line;
 }
 
 .section-title.showcase-title {
@@ -56,9 +52,19 @@
     }
 }
 
-.show-case-arrow {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+
+.site-links {
+    margin-top: 4%;
+    a {
+        border: 1.5px solid white;
+        padding: 1% 2%;
+        letter-spacing: 2px;
+        margin: 2%;
+        font-size: 1.1rem;
+    }
+    .btn.first {
+        margin-left: 0;
+    }
 }
+

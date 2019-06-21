@@ -1,0 +1,321 @@
+
+@media (max-width: 1250px) {
+    .desktop-title {
+        display: none;
+    }
+    .mq-title-1 {
+        display: block;
+    }
+
+    .typed {
+        font-size: 20px;
+    }
+
+    header {
+        background-position: center;
+    }
+
+    .about-description p {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 928px) {
+
+    .arrow-main {
+
+        bottom: -250px;
+
+    }
+
+    .section-about {
+        margin: 10vh 0 6% 0;
+    }
+
+    header {
+        .main-title {
+           
+            margin: 20vh 0 2%;
+            
+        }
+    }
+    .mq-title-1 {
+        display: none;
+    }
+    .mq-title-2 {
+        display: block;
+    }
+
+    .typed {
+        font-size: 16px;
+    }
+
+    .view-portfolio {
+        h3 {
+            font-size: 0.6rem;
+        }
+        
+    }
+    .about-description p {
+        font-size: 0.6rem;
+    }
+
+    #about {
+        .about-me {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .profile-pic {
+                width: 50%;
+                margin-bottom: 5%;
+            }
+
+            .about-description {
+                width: 100%;
+            }
+
+            .about-description h5 {
+                font-size: 24px;
+            }
+
+            @keyframes typewriter {
+                from{width: 0;}
+                to{width: 75%;}
+            }
+        }
+    }
+
+    .keep-scrolling {
+        width: 40%;
+    }
+
+    #showcase {
+        margin-top:10%;
+    }
+    .showcase-container {
+        flex-direction: column;
+        .showcase-description {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h5 {
+               font-size: 1.8rem;
+               text-align: center;
+            }
+            p {
+                font-size: 17px;
+                text-align: center;
+            }
+        }
+        .showcase-pic {
+            width: 100%;
+            padding-top: 30px;
+        }
+
+        .site-links {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .arrow-with-line {
+        .vertical-line {
+            height: 100px;
+        }
+    }
+
+    .resume {
+        margin: 10% 0;
+        p {
+            font-size: 20px;
+        }
+        a {
+            font-size: 18px;
+        }
+    }
+
+    i {
+        font-size: 3.5rem;
+        
+    }
+
+    .icons {
+        margin: 0 5%;
+    }
+
+    .social-icons {
+        a {
+            margin: 0 2%;
+        }
+    }
+
+    .icons-half {
+        p {
+            font-size: 15px;
+        }
+    }
+}
+
+@media (max-width: 636px) {
+
+    .section-title {
+        margin-top: 20px;
+        font-size: 70px;
+    }
+
+    .section-about {
+        margin: 12vh 0 6% 0;
+    }
+
+    header {
+        .main-title {
+           
+            margin: 15vh 0 2%;
+            
+        }
+    }
+    .mq-title-2 {
+        display: none;
+    }
+    .mq-title-3 {
+        display: block;
+    }
+
+    .typed {
+        margin: 2% 5%;
+        font-size: 15px;
+    }
+    #about {
+        .about-me {
+            .about-description h5 {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .keep-scrolling {
+        width: 60%;
+        font-size: 15px;
+    }
+
+
+    .showcase-container {
+        .showcase-description {
+            h5 {
+               font-size: 1.5rem;
+               text-align: center;
+            }
+            p {
+                font-size: 15px;
+                text-align: center;
+            }
+        }
+    }
+
+    #contact {
+        h5 {
+            font-size: 1.5rem;
+        }
+        .social-icons {
+            i {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .contact-form {
+        font-size: 0.6rem;
+        width: 100%;
+    }
+
+    .contact-container {
+        width: 70%;
+    }
+
+    .icons-half {
+        a {
+            margin: 0 2%;
+        }
+    }
+    
+
+}
+
+@media (max-width: 595px) {
+
+    #showcase {
+        margin-top:15%;
+    }
+    #about {
+        .about-me {
+            .about-description h5 {
+                font-size: 16px;
+            }
+
+            @keyframes typewriter {
+                from{width: 0;}
+                to{width: 75%;}
+            }
+        }
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    #about {
+        .about-me {
+            .about-description h5 {
+                font-size: 16px;
+            }
+
+            @keyframes typewriter {
+                from{width: 0;}
+                to{width: 95%;}
+            }
+        }
+    }
+
+    #contact {
+        h5 {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media (max-width: 488px) {
+    #showcase {
+        margin-top:20%;
+    }
+    #about {
+        .about-me {
+            .about-description h5 {
+                font-size: 15px;
+            }
+
+            @keyframes typewriter {
+                from{width: 0;}
+                to{width: 100%;}
+            }
+        }
+    }
+
+    i {
+        font-size: 2.5rem;
+    }
+
+    .icons-half {
+        p {
+            font-size: 13px;
+        }
+    }
+
+    #contact {
+        .social-icons {
+            i {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}

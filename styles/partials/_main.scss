@@ -1,21 +1,9 @@
 body {
-    height: 100vh;
-    background-position: fixed;
+    // height: 100vh;
     color: $primary-white;
 }
 
-.arrows {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    margin-bottom: 1%;
-}
 
-.arrow-header {
-    position: absolute;
-    bottom: -250px;
-}
 .typed {
     font-family: 'coco_gothiclight';
     letter-spacing: 14px;
@@ -40,18 +28,18 @@ header {
     background-image: url(../assets/img-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 120vh;
     background-color: $primary-black;
     transition: 0.5s all ease;
+    background-position: center;
+    
     .main-title {
         margin: 15vh 0 2%;
     }
 }
-
 
 .my-path {
     fill: white;
@@ -77,4 +65,14 @@ header {
     background: linear-gradient(90deg, rgba(176,127,229,1) 0%, rgba(150,215,200,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.mq-title-1 {
+    display: none;
+}
+.mq-title-2 {
+    display: none;
+}
+.mq-title-3 {
+    display: none;
 }

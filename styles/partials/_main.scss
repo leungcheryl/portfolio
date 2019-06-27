@@ -1,5 +1,4 @@
 body {
-    // height: 100vh;
     color: $primary-white;
 }
 
@@ -35,11 +34,10 @@ header {
     background-color: $primary-black;
     transition: 0.5s all ease;
     background-position: center;
-    
     .main-title {
         margin: 15vh 0 2%;
     }
-}
+}   
 
 .my-path {
     fill: white;

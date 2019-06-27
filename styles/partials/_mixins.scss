@@ -18,7 +18,7 @@
 @mixin gradient-underline ($height) {
     width: 100%;
     height: $height;
-    background: linear-gradient(90deg, rgba(176,127,229,0.4) 0%, rgba(150,215,200,0.4) 100%); 
+    background: linear-gradient(90deg, rgba(176,127,229,0.4) 0%, rgba(150, 215, 200, 0.4) 100%); 
     content: "";
     position: absolute;
     bottom: 0;

@@ -928,7 +928,7 @@ main {
   text-align: center;
   margin: 0 auto;
   padding: 10% 0 1%;
-  line-height: 0.9;
+  line-height: 1;
   color: white; }
 
 .about-description h5 {
@@ -1002,6 +1002,9 @@ main {
     font-size: 1.1rem; }
   .site-links .btn.first {
     margin-left: 0; }
+
+.mobile-showcase-pic {
+  display: none; }
 
 .dev-icons {
   margin: 1% 0;
@@ -1084,7 +1087,11 @@ i {
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  margin-top: 20px; }
+
+.skills-arrow {
+  margin-top: 50px; }
 
 #contact {
   padding-bottom: 4%; }
@@ -1115,7 +1122,15 @@ i {
   #contact p {
     text-align: center;
     padding: 1% 0;
-    font-size: 1.2rem; }
+    font-size: 1.3rem;
+    margin: 4% 0;
+    background: -webkit-gradient(linear, left top, right top, from(#b07fe5), to(#96d7c8));
+    background: -webkit-linear-gradient(left, #b07fe5 0%, #96d7c8 100%);
+    background: -o-linear-gradient(left, #b07fe5 0%, #96d7c8 100%);
+    background: linear-gradient(90deg, #b07fe5 0%, #96d7c8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800; }
 
 .social-arrows {
   display: -webkit-box;
@@ -1207,6 +1222,11 @@ i {
       transition: 0.5s all ease;
       background-color: transparent; }
 
+p.email {
+  font-family: 'Questrial', sans-serif;
+  font-size: 8px;
+  letter-spacing: 3px; }
+
 footer {
   background-color: #6a6a6a;
   border-top: 3px solid white; }
@@ -1222,19 +1242,25 @@ footer {
   .mq-title-1 {
     display: block; }
   .typed {
-    font-size: 20px; }
+    font-size: 18px; }
   header {
     background-position: center; }
   .about-description p {
     font-size: 0.7rem; } }
 
 @media (max-width: 928px) {
+  #about {
+    margin: 5vh 0 0; }
+  header {
+    background-size: auto 85%; }
+    header .main-title {
+      margin: 20vh 0 2%; }
+  footer p {
+    font-size: 14px; }
   .arrow-main {
-    bottom: -250px; }
+    bottom: -200px; }
   .section-about {
     margin: 10vh 0 6% 0; }
-  header .main-title {
-    margin: 20vh 0 2%; }
   .mq-title-1 {
     display: none; }
   .mq-title-2 {
@@ -1305,6 +1331,10 @@ footer {
     .showcase-container .site-links {
       width: 100%;
       text-align: center; }
+  .large {
+    display: none; }
+  .mobile-showcase-pic {
+    display: block; }
   .arrow-with-line .vertical-line {
     height: 100px; }
   .resume {
@@ -1323,20 +1353,23 @@ footer {
     font-size: 15px; } }
 
 @media (max-width: 636px) {
+  .arrow-main {
+    bottom: -175px; }
   .section-title {
     margin-top: 20px;
     font-size: 70px; }
-  .section-about {
-    margin: 12vh 0 6% 0; }
-  header .main-title {
-    margin: 15vh 0 2%; }
+  header {
+    background-size: auto 80%; }
+    header .main-title {
+      margin: 17vh 0 2%; }
   .mq-title-2 {
     display: none; }
   .mq-title-3 {
     display: block; }
   .typed {
     margin: 2% 5%;
-    font-size: 15px; }
+    font-size: 17px;
+    letter-spacing: 10px; }
   #about .about-me .about-description h5 {
     font-size: 20px; }
   .keep-scrolling {
@@ -1363,6 +1396,8 @@ footer {
 @media (max-width: 595px) {
   #showcase {
     margin-top: 15%; }
+  #about .about-me .profile-pic {
+    width: 75%; }
   #about .about-me .about-description h5 {
     font-size: 16px; }
   @-webkit-keyframes typewriter {
@@ -1377,6 +1412,8 @@ footer {
       width: 75%; } } }
 
 @media (max-width: 500px) {
+  header {
+    background-size: auto 80%; }
   #about .about-me .about-description h5 {
     font-size: 16px; }
   @-webkit-keyframes typewriter {
@@ -1390,7 +1427,11 @@ footer {
     to {
       width: 95%; } }
   #contact h5 {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  .typed {
+    margin: 5% 2%;
+    font-size: 16px;
+    letter-spacing: 7px; } }
 
 @media (max-width: 488px) {
   #showcase {
@@ -1413,3 +1454,13 @@ footer {
     font-size: 13px; }
   #contact .social-icons i {
     font-size: 1.6rem; } }
+
+@media (max-width: 380px) {
+  #about .about-me .profile-pic {
+    width: 85%; }
+  .section-about {
+    margin: 4vh 0 6% 0; }
+  .typed {
+    margin: 8% 2%;
+    font-size: 16px;
+    letter-spacing: 5px; } }

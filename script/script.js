@@ -10,8 +10,8 @@ const lineDrawing = anime({
 
   let typed = new Typed('.typed', {
     stringsElement: '#typed-strings',
-    typeSpeed: 110,
-    startDelay: 500,
+    typeSpeed: 140,
+    startDelay: 1200,
 		backSpeed: 40
   });
 
@@ -42,7 +42,7 @@ $(document).ready(function(){
     AOS.init();
 
     const scroll = new SmoothScroll('a[href*="#"]', {
-      speed: 800
+      speed: 1100
     });
 
 let controller = new ScrollMagic.Controller();

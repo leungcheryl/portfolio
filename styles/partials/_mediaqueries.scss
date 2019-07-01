@@ -117,7 +117,8 @@
                 text-align: center;
             }
         }
-        .showcase-pic {
+        .showcase-pic,
+        .desktop-showcase-pic {
             width: 100%;
             padding-top: 30px;
         }
@@ -128,7 +129,7 @@
         }
     }
 
-    .large {
+    .desktop-showcase-pic.large {
         display: none;
     }
 
@@ -368,7 +369,7 @@
     }
 
     .section-about {
-        margin: 4vh 0 6% 0;
+        margin: 5vh 0 6% 0;
     }
 
     .typed {

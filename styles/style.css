@@ -980,7 +980,11 @@ main {
     align-items: center;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
   .showcase-container .showcase-pic {
     width: 55%; }
 
@@ -1016,6 +1020,78 @@ main {
 
 .mobile-showcase-pic {
   display: none; }
+
+.click-options {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.gifs-ds,
+.gifs-ckr,
+.gifs-faa {
+  text-align: center;
+  margin: 0 auto;
+  display: none; }
+
+.static-ds,
+.static-ckr,
+.static-faa {
+  display: block; }
+
+.static-txt {
+  margin-right: 10px;
+  color: #9EBED0; }
+  .static-txt:hover {
+    cursor: pointer;
+    color: #9EBED0;
+    -webkit-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    transition: 0.5s all ease; }
+
+.desktop-txt {
+  margin: 0 10px; }
+  .desktop-txt:hover {
+    cursor: pointer;
+    color: #96D7C8;
+    -webkit-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    transition: 0.5s all ease; }
+
+.mobile-txt {
+  margin-left: 10px; }
+  .mobile-txt:hover {
+    cursor: pointer;
+    color: #A995DE;
+    -webkit-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    transition: 0.5s all ease; }
+
+.mobile-txt.faa {
+  margin: 0 10px; }
+
+.lookbook-txt {
+  margin-left: 10px; }
+  .lookbook-txt:hover {
+    cursor: pointer;
+    color: #E6C0C2;
+    -webkit-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    transition: 0.5s all ease; }
+
+.dem {
+  width: 100%;
+  overflow: hidden;
+  font-size: 0;
+  border-radius: 15px;
+  border: 10px solid white;
+  background: #151515 url(../assets/preloader.gif) center center no-repeat; }
+
+.loading {
+  background: #151515 url(../assets/preloader.gif) center center no-repeat; }
 
 .dev-icons {
   margin: 1% 0;
@@ -1343,6 +1419,8 @@ footer {
     .showcase-container .site-links {
       width: 100%;
       text-align: center; }
+  .demos {
+    display: none; }
   .desktop-showcase-pic.large {
     display: none; }
   .mobile-showcase-pic {

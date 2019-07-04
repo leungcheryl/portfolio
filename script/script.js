@@ -10,8 +10,8 @@ const lineDrawing = anime({
 
   let typed = new Typed('.typed', {
     stringsElement: '#typed-strings',
-    typeSpeed: 180,
-    startDelay: 1200,
+    typeSpeed: 100,
+    startDelay: 2000,
 		backSpeed: 40
   });
 
@@ -37,6 +37,7 @@ const lineDrawing = anime({
 
 
   // DEMOS
+
   // drive-solo 
   $('.ds-static').click(function(){
     $('.gifs-ds').removeClass('show-desktop').removeClass('show-mobile');
@@ -169,29 +170,29 @@ function demoMobileCkr() {
 // fashion and art
 
 
-$('.static-demo').click(function(){
-  $('.gifs-faa').removeClass('show-desktop').removeClass('show-mobile');
+$('.faa-static').click(function(){
+  $('.gifs-faa').removeClass('show-desktop').removeClass('show-mobile').removeClass('show-lookbook');
   $('.gifs-faa').hide();
   $('.gifs-faa').toggleClass('show-static');
   demoStaticFaa();
 })
 
-$('.desktop-demo').click(function(){
-  $('.gifs-faa').removeClass('show-static').removeClass('show-mobile');
+$('.faa-desktop').click(function(){
+  $('.gifs-faa').removeClass('show-static').removeClass('show-mobile').removeClass('show-lookbook');
   $('.gifs-faa').hide();
   $('.gifs-faa').toggleClass('show-desktop');
   demoDesktopFaa();
 });
 
-$('.mobile-demo').click(function(){
-  $('.gifs-faa').removeClass('show-static').removeClass('show-deskop');
+$('.faa-mobile').click(function(){
+  $('.gifs-faa').removeClass('show-static').removeClass('show-deskop').removeClass('show-lookbook');
   $('.gifs-faa').hide();
   $('.gifs-faa').toggleClass('show-mobile');
   demoMobileFaa();
 });
 
-$('.lookbook-demo').click(function(){
-  $('.gifs-faa').removeClass('show-static').removeClass('show-deskop');
+$('.faa-lookbook').click(function(){
+  $('.gifs-faa').removeClass('show-static').removeClass('show-deskop').removeClass('show-mobile');
   $('.gifs-faa').hide();
   $('.gifs-faa').toggleClass('show-lookbook');
   demoLookbookFaa();
@@ -210,7 +211,7 @@ function demoStaticFaa() {
 }
 
 function demoDesktopFaa() {
-  if ($('.gifs-ckr').hasClass('show-desktop')) {
+  if ($('.gifs-faa').hasClass('show-desktop')) {
     $('.desktop-faa').fadeIn('slow');
     $('.desktop-txt.faa').css('color','#96D7C8');
     $('.mobile-txt.faa').css('color','white');
@@ -246,15 +247,278 @@ function demoLookbookFaa() {
 }
 
 
-$(document).ready(function(){
-    $('.nav-icon').click(function(){
-      toggleNav();
-    });
-    AOS.init();
 
-    const scroll = new SmoothScroll('a[href*="#"]', {
-      speed: 1100
-    });
+// woo-commerce 
+
+$('.zw-static').click(function(){
+  $('.gifs-zw').removeClass('show-desktop');
+  $('.gifs-zw').hide();
+  $('.gifs-zw').toggleClass('show-static');
+  demoStaticZw();
+})
+
+$('.zw-desktop').click(function(){
+  $('.gifs-zw').removeClass('show-static')
+  $('.gifs-zw').hide();
+  $('.gifs-zw').toggleClass('show-desktop');
+  demoDesktopZw();
+});
+
+function demoStaticZw() {
+  if ($('.gifs-zw').hasClass('show-static')) {
+    $('.static-zw').fadeIn('slow');
+    $('.static-txt.zw').css('color','#9EBED0');
+    $('.desktop-txt.zw').css('color','white');
+  } else {
+    $('.static-ckr').show();
+    $('.static-txt.zw').css('color','#9EBED0');
+    $('.desktop-txt.zw').css('color','white');
+  }
+}
+
+function demoDesktopZw() {
+  if ($('.gifs-zw').hasClass('show-desktop')) {
+    $('.desktop-zw').fadeIn('slow');
+    $('.desktop-txt.zw').css('color','#96D7C8');
+    $('.static-txt.zw').css('color','white');
+  } else {
+    $('.desktop-zw').show();
+    $('.desktop-txt.zw').css('color','#96D7C8');
+    $('.static-txt.zw').css('color','white');
+  }
+}
+
+//
+
+// animal collectives 
+
+
+$('.ac-static').click(function(){
+  $('.gifs-ac').removeClass('show-desktop').removeClass('show-mobile');
+  $('.gifs-ac').hide();
+  $('.gifs-ac').toggleClass('show-static');
+  demoStaticAc();
+})
+
+$('.ac-desktop').click(function(){
+  $('.gifs-ac').removeClass('show-static').removeClass('show-mobile');
+  $('.gifs-ac').hide();
+  $('.gifs-ac').toggleClass('show-desktop');
+  demoDesktopAc();
+});
+
+$('.ac-mobile').click(function(){
+  $('.gifs-ac').removeClass('show-static').removeClass('show-deskop');
+  $('.gifs-ac').hide();
+  $('.gifs-ac').toggleClass('show-mobile');
+  demoMobileAc();
+});
+
+function demoStaticAc() {
+  if ($('.gifs-ac').hasClass('show-static')) {
+    $('.static-ac').fadeIn('slow');
+    $('.static-txt.ac').css('color','#9EBED0');
+    $('.mobile-txt.ac').css('color','white');
+    $('.desktop-txt.ac').css('color','white');
+  } else {
+    $('.static-ac').show();
+    $('.static-txt.ac').css('color','#9EBED0');
+    $('.mobile-txt.ac').css('color','white');
+    $('.desktop-txt.ac').css('color','white');
+  }
+}
+
+function demoDesktopAc() {
+  if ($('.gifs-ac').hasClass('show-desktop')) {
+    $('.desktop-ac').fadeIn('slow');
+    $('.desktop-txt.ac').css('color','#96D7C8');
+    $('.mobile-txt.ac').css('color','white');
+    $('.static-txt.ac').css('color','white');
+  } else {
+    $('.desktop-ac').show();
+    $('.desktop-txt.ac').css('color','#96D7C8');
+    $('.mobile-txt.ac').css('color','white');
+    $('.static-txt.ac').css('color','white');
+  }
+}
+
+function demoMobileAc() {
+  if ($('.gifs-ac').hasClass('show-mobile')) {
+    $('.mobile-ac').fadeIn('slow');
+    $('.mobile-txt.ac').css('color','#A995DE');
+    $('.desktop-txt.ac').css('color','white');
+    $('.static-txt.ac').css('color','white');
+  } else {
+    $('.mobile-ac').show();
+    $('.mobile-txt.ac').css('color','#A995DE');
+    $('.desktop-txt.ac').css('color','white');
+    $('.static-txt.ac').css('color','white');
+  }
+}
+
+//
+
+// does the dog die?
+
+$('.dtdd-static').click(function(){
+  $('.gifs-dtdd').removeClass('show-desktop').removeClass('show-mobile');
+  $('.gifs-dtdd').hide();
+  $('.gifs-dtdd').toggleClass('show-static');
+  demoStaticDtdd();
+})
+
+$('.dtdd-desktop').click(function(){
+  $('.gifs-dtdd').removeClass('show-static').removeClass('show-mobile');
+  $('.gifs-dtdd').hide();
+  $('.gifs-dtdd').toggleClass('show-desktop');
+  demoDesktopDtdd();
+});
+
+$('.dtdd-mobile').click(function(){
+  $('.gifs-dtdd').removeClass('show-static').removeClass('show-deskop');
+  $('.gifs-dtdd').hide();
+  $('.gifs-dtdd').toggleClass('show-mobile');
+  demoMobileDtdd();
+});
+
+function demoStaticDtdd() {
+  if ($('.gifs-dtdd').hasClass('show-static')) {
+    $('.static-dtdd').fadeIn('slow');
+    $('.static-txt.dtdd').css('color','#9EBED0');
+    $('.mobile-txt.dtdd').css('color','white');
+    $('.desktop-txt.dtdd').css('color','white');
+  } else {
+    $('.static-dtdd').show();
+    $('.static-txt.dtdd').css('color','#9EBED0');
+    $('.mobile-txt.dtdd').css('color','white');
+    $('.desktop-txt.dtdd').css('color','white');
+  }
+}
+
+function demoDesktopDtdd() {
+  if ($('.gifs-dtdd').hasClass('show-desktop')) {
+    $('.desktop-dtdd').fadeIn('slow');
+    $('.desktop-txt.dtdd').css('color','#96D7C8');
+    $('.mobile-txt.dtdd').css('color','white');
+    $('.static-txt.dtdd').css('color','white');
+  } else {
+    $('.desktop-dtdd').show();
+    $('.desktop-txt.dtdd').css('color','#96D7C8');
+    $('.mobile-txt.dtdd').css('color','white');
+    $('.static-txt.dtdd').css('color','white');
+  }
+}
+
+function demoMobileDtdd() {
+  if ($('.gifs-dtdd').hasClass('show-mobile')) {
+    $('.mobile-dtdd').fadeIn('slow');
+    $('.mobile-txt.dtdd').css('color','#A995DE');
+    $('.desktop-txt.dtdd').css('color','white');
+    $('.static-txt.dtdd').css('color','white');
+  } else {
+    $('.mobile-dtdd').show();
+    $('.mobile-txt.dtdd').css('color','#A995DE');
+    $('.desktop-txt.dtdd').css('color','white');
+    $('.static-txt.dtdd').css('color','white');
+  }
+}
+
+//
+
+// Average joe
+
+$('.aj-static').click(function(){
+  $('.gifs-aj').removeClass('show-desktop').removeClass('show-mobile');
+  $('.gifs-aj').hide();
+  $('.gifs-aj').toggleClass('show-static');
+  demoStaticAj();
+})
+
+$('.aj-desktop').click(function(){
+  $('.gifs-aj').removeClass('show-static').removeClass('show-mobile');
+  $('.gifs-aj').hide();
+  $('.gifs-aj').toggleClass('show-desktop');
+  demoDesktopAj();
+});
+
+$('.aj-mobile').click(function(){
+  $('.gifs-aj').removeClass('show-static').removeClass('show-deskop');
+  $('.gifs-aj').hide();
+  $('.gifs-aj').toggleClass('show-mobile');
+  demoMobileAj();
+});
+
+function demoStaticAj() {
+  if ($('.gifs-aj').hasClass('show-static')) {
+    $('.static-aj').fadeIn('slow');
+    $('.static-txt.aj').css('color','#9EBED0');
+    $('.mobile-txt.aj').css('color','white');
+    $('.desktop-txt.aj').css('color','white');
+  } else {
+    $('.static-aj').show();
+    $('.static-txt.aj').css('color','#9EBED0');
+    $('.mobile-txt.aj').css('color','white');
+    $('.desktop-txt.aj').css('color','white');
+  }
+}
+
+function demoDesktopAj() {
+  if ($('.gifs-aj').hasClass('show-desktop')) {
+    $('.desktop-aj').fadeIn('slow');
+    $('.desktop-txt.aj').css('color','#96D7C8');
+    $('.mobile-txt.aj').css('color','white');
+    $('.static-txt.aj').css('color','white');
+  } else {
+    $('.desktop-aj').show();
+    $('.desktop-txt.aj').css('color','#96D7C8');
+    $('.mobile-txt.aj').css('color','white');
+    $('.static-txt.aj').css('color','white');
+  }
+}
+
+function demoMobileAj() {
+  if ($('.gifs-aj').hasClass('show-mobile')) {
+    $('.mobile-aj').fadeIn('slow');
+    $('.mobile-txt.aj').css('color','#A995DE');
+    $('.desktop-txt.aj').css('color','white');
+    $('.static-txt.aj').css('color','white');
+  } else {
+    $('.mobile-aj').show();
+    $('.mobile-txt.aj').css('color','#A995DE');
+    $('.desktop-txt.aj').css('color','white');
+    $('.static-txt.aj').css('color','white');
+  }
+}
+
+if (detector.mobile() === null) {
+  let sources = document.querySelectorAll('video source');
+  let video = document.querySelector('video');
+  for (let i = 0; i < sources.length;i++) {
+    sources[i].setAttribute('src', sources[i].getAttribute('data-src'));
+  }
+
+  $('video').load();
+  $('source').load();
+  video.load();
+  console.log('desktop')
+} else {
+  console.log('mobile')
+}
+
+// 
+$(document).ready(function(){
+
+  pic = new Image();
+  pic.src="../assets/img-1.jpg";
+
+  $('.nav-icon').click(function(){
+    toggleNav();
+  });
+  AOS.init();
+
+  const scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 1100
+  });
 
 
   let controller = new ScrollMagic.Controller();

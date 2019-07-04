@@ -305,6 +305,9 @@ body {
   opacity: 0;
   display: none; }
 
+div#preload {
+  display: none; }
+
 header {
   background-image: url(../assets/img-1.jpg);
   background-repeat: no-repeat;
@@ -1028,18 +1031,30 @@ main {
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center; }
 
 .gifs-ds,
 .gifs-ckr,
-.gifs-faa {
+.gifs-faa,
+.gifs-zw,
+.gifs-ac,
+.gifs-dtdd,
+.gifs-aj {
   text-align: center;
   margin: 0 auto;
   display: none; }
 
 .static-ds,
 .static-ckr,
-.static-faa {
+.static-faa,
+.static-zw,
+.static-ac,
+.static-dtdd,
+.static-aj {
   display: block; }
 
 .static-txt {
@@ -1088,10 +1103,10 @@ main {
   font-size: 0;
   border-radius: 15px;
   border: 10px solid white;
-  background: #151515 url(../assets/preloader.gif) center center no-repeat; }
+  background: #151515 url(../assets/preloader.svg) center center no-repeat; }
 
 .loading {
-  background: #151515 url(../assets/preloader.gif) center center no-repeat; }
+  background: #151515 url(../assets/preloader.svg) center center no-repeat; }
 
 .dev-icons {
   margin: 1% 0;
@@ -1419,7 +1434,7 @@ footer {
     .showcase-container .site-links {
       width: 100%;
       text-align: center; }
-  .demos {
+  .demos, .dem {
     display: none; }
   .desktop-showcase-pic.large {
     display: none; }

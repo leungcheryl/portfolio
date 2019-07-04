@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>cheryl leung // portfolio</title>
+    <link rel="preload" href="assets/img-1.jpg" as="image"> 
     <link rel="stylesheet" href="styles/style.css" />
+    
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -19,7 +21,15 @@
 
   </head>
   <body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"></script>
+    <script src="script/detectmobilebrowser.js"></script>
+    <script src="script/lib-typedjs/typed.min.js"></script>
     <header>
+      <div id="preload">
+          <img src="assets/img-1.jpg" alt="background image black and white flower"/>
+      </div>
+
       <div class="main-title desktop-title">
           <svg width="1194px" height="199px" viewBox="0 0 1194 199" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <defs>
@@ -73,7 +83,7 @@
       <div id="typed-strings">
         <h2>&nbsp;html & css</h2>
         <h2>&nbsp;javascript & jQuery</h2> 
-        <h2>&nbsp;react & firebase</h2>
+        <h2>&nbsp;react</h2>
         <h2>&nbsp;sketch</h2>
         <h2>&nbsp;front-end developer.</h2>
       </div>
@@ -197,28 +207,28 @@
                     <img src="assets/drive-solo.png" alt="Picture of Desktop Mac and Tablet with screenshot of drive solo PSD website">
                 </div>
                 <div class="gifs-ds desktop-ds dem">
-                    <video width="100%" height="auto" autoplay loop preload="auto" class="vid">
-                        <source src="assets/drive-solo-desktop.mp4" type="video/mp4">
+                    <video width="100%" height="auto" autoplay muted loop preload="auto" class="vid">
+                        <source data-src="assets/drive-solo-desktop.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="gifs-ds mobile-ds dem">
-                    <video width="100%" height="auto" autoplay loop preload="auto" class="vid">
-                        <source src="assets/drive-solo-mobile.mp4" type="video/mp4">
+                    <video width="100%" height="auto" autoplay muted loop preload="auto" class="vid">
+                        <source data-src="assets/drive-solo-mobile.mp4" type="video/mp4">
                     </video>
                 </div>
               </div>
  
               <div class="demos">
                 <div class="click-options">
-                  <div class="static-demo ds-static">
+                  <div class="ds-static">
                     <p class="static-txt ds">Static</p>
                   </div>
                   <p> | </p>
-                  <div class="desktop-demo ds-desktop">
+                  <div class="ds-desktop">
                     <p class="desktop-txt ds">Desktop Demo</p>
                   </div>
                   <p> | </p>
-                  <div class="mobile-demo ds-mobile">
+                  <div class="ds-mobile">
                     <p class="mobile-txt ds">Mobile Demo</p>
                   </div>
                 </div>
@@ -247,28 +257,28 @@
                       <img src="assets/cute-killer-robots.png" alt="Picture of Desktop Mac and Tablet with screenshot of Cute Killer Robots website project">
                   </div>
                   <div class="gifs-ckr desktop-ckr dem">
-                      <video width="100%" height="auto" autoplay loop preload="auto" class="vid">
-                          <source src="assets/cute-killer-robots-desktop.mp4" type="video/mp4">
+                      <video width="100%" height="auto" autoplay muted loop preload="auto" class="vid">
+                          <source data-src="assets/cute-killer-robots-desktop.mp4" type="video/mp4">
                       </video>
                   </div>
                   <div class="gifs-ckr mobile-ckr dem">
-                      <video width="100%" height="auto" autoplay loop preload="auto" class="vid">
-                          <source src="assets/cute-killer-robots-mobile.mp4" type="video/mp4">
+                      <video width="100%" height="auto" autoplay muted loop preload="auto" class="vid">
+                          <source data-src="assets/cute-killer-robots-mobile.mp4" type="video/mp4">
                       </video>
                   </div>
                 </div>
 
                 <div class="demos">
                   <div class="click-options">
-                    <div class="static-demo ckr-static">
+                    <div class="ckr-static">
                       <p class="static-txt ckr">Static</p>
                     </div>
                     <p> | </p>
-                    <div class="desktop-demo ckr-desktop">
+                    <div class="ckr-desktop">
                       <p class="desktop-txt ckr">Desktop Demo</p>
                     </div>
                     <p> | </p>
-                    <div class="mobile-demo ckr-mobile">
+                    <div class="ckr-mobile">
                       <p class="mobile-txt ckr">Mobile Demo</p>
                     </div>
                   </div>
@@ -321,38 +331,38 @@
                       <img src="assets/fashion-and-art.png" alt="Picture of Desktop Mac and Tablet with screenshot of fashion and art website project">
                   </div>
                   <div class="gifs-faa desktop-faa dem">
-                      <video width="100%" height="auto" autoplay loop preload="auto" class="vid">
-                          <source src="assets/fashion-and-art-home.mp4" type="video/mp4">
+                      <video width="100%" height="auto" autoplay muted loop preload="auto" class="vid">
+                          <source data-src="assets/fashion-and-art-home.mp4" type="video/mp4">
                       </video>
                   </div>
                   <div class="gifs-faa mobile-faa dem">
-                      <video width="100%" height="auto" autoplay loop preload="auto" class="vid">
-                          <source src="assets/fashion-and-art-portfolio.mp4" type="video/mp4">
+                      <video width="100%" height="auto" autoplay muted loop preload="auto" class="vid">
+                          <source data-src="assets/fashion-and-art-portfolio.mp4" type="video/mp4">
                       </video>
                   </div>
                   
-                  <div class="gifs-faa mobile-faa dem">
-                      <video width="100%" height="auto" autoplay loop preload="auto" class="vid">
-                          <source src="assets/fashion-and-art-lookbook.mp4" type="video/mp4">
+                  <div class="gifs-faa lookbook-faa dem">
+                      <video width="100%" height="auto" autoplay muted loop preload="auto" class="vid">
+                          <source data-src="assets/fashion-and-art-lookbook.mp4" type="video/mp4">
                       </video>
                   </div>
                 </div>
                 
                 <div class="demos">
                   <div class="click-options">
-                    <div class="static-demo">
+                    <div class="faa-static">
                       <p class="static-txt faa">Static</p>
                     </div>
                     <p> | </p>
-                    <div class="desktop-demo">
+                    <div class="faa-desktop">
                       <p class="desktop-txt faa">Homepage Demo</p>
                     </div>
                     <p> | </p>
-                    <div class="mobile-demo">
+                    <div class="faa-mobile">
                       <p class="mobile-txt faa">Portfolio Demo</p>
                     </div>
                     <p> | </p>
-                    <div class="lookbook-demo">
+                    <div class="faa-lookbook">
                       <p class="lookbook-txt faa">Lookbook Demo</p>
                     </div>
                   </div>
@@ -372,28 +382,27 @@
           <div class="showcase-container">
             <div data-aos="fade-right" data-aos-duration="1500" class="desktop-showcase-pic">
               
-
               <div class="gifs-container">
-                  <div class="gifs static">
-                      <img src="assets/psd.png" alt="Picture of Desktop Mac and Tablet with screenshot of woo commerce website project">
-                  </div>
-                  <div class="gifs desktop">
-                      <video width="100%" height="auto" autoplay loop preload="auto" class="vid">
-                          <source src="assets/woo-commerce-desktop.mp4" type="video/mp4">
-                      </video>
-                  </div>
+                <div class="gifs-zw static-zw">
+                    <img src="assets/psd.png" alt="Picture of Desktop Mac and Tablet with screenshot of woo commerce website project">
+                </div>
+                <div class="gifs-zw desktop-zw dem">
+                    <video width="100%" height="auto" autoplay muted loop preload="auto" class="vid">
+                        <source data-src="assets/woo-commerce-desktop.mp4" type="video/mp4">
+                    </video>
+                </div>
             
 
                 </div>
                 
                 <div class="demos">
                   <div class="click-options">
-                    <div class="static-demo">
-                      <p class="static-txt">Static</p>
+                    <div class="zw-static">
+                      <p class="static-txt zw">Static</p>
                     </div>
                     <p> | </p>
-                    <div class="desktop-demo">
-                      <p class="desktop-txt">Desktop Demo</p>
+                    <div class="zw-desktop">
+                      <p class="desktop-txt zw">Desktop Demo</p>
                     </div>
                   </div>
                 </div>      
@@ -440,17 +449,17 @@
               
 
               <div class="gifs-container">
-                  <div class="gifs static">
+                  <div class="gifs-ac static-ac">
                       <img src="assets/animal-collectives.png" alt="Picture of Desktop Mac and Tablet with screenshot of animal collectives website project">
                   </div>
-                  <div class="gifs desktop">
-                      <video width="100%" height="auto" autoplay loop preload="auto" class="vid">
-                          <source src="assets/animal-collectives-desktop.mp4" type="video/mp4">
+                  <div class="gifs-ac desktop-ac dem">
+                      <video width="100%" height="auto" autoplay muted loop preload="auto" class="vid">
+                          <source data-src="assets/animal-collectives-desktop.mp4" type="video/mp4">
                       </video>
                   </div>
-                  <div class="gifs mobile">
-                      <video width="100%" height="auto" autoplay loop preload="auto" class="vid">
-                          <source src="assets/animal-collectives-mobile.mp4" type="video/mp4">
+                  <div class="gifs-ac mobile-ac dem">
+                      <video width="100%" height="auto" autoplay muted loop preload="auto" class="vid">
+                          <source data-src="assets/animal-collectives-mobile.mp4" type="video/mp4">
                       </video>
                   </div>
 
@@ -458,16 +467,16 @@
                 
                 <div class="demos">
                   <div class="click-options">
-                    <div class="static-demo">
-                      <p class="static-txt">Static</p>
+                    <div class="ac-static">
+                      <p class="static-txt ac">Static</p>
                     </div>
                     <p> | </p>
-                    <div class="desktop-demo">
-                      <p class="desktop-txt">Desktop Demo</p>
+                    <div class="ac-desktop">
+                      <p class="desktop-txt ac">Desktop Demo</p>
                     </div>
                     <p> | </p>
-                    <div class="mobile-demo">
-                      <p class="mobile-txt">Mobile Demo</p>
+                    <div class="ac-mobile">
+                      <p class="mobile-txt ac">Mobile Demo</p>
                     </div>
                   </div>
                 </div>
@@ -483,22 +492,22 @@
               <span class="scroll-arrows three"></span>
           </div>
 
+          <!-- START -of- does the dog die -->
           <div class="showcase-container">
-            <div data-aos="fade-right" data-aos-duration="1500" class="desktop-showcase-pic large">
+            <div data-aos="fade-right" data-aos-duration="1500" class="desktop-showcase-pic">
               
-
               <div class="gifs-container">
-                  <div class="gifs static">
+                  <div class="gifs-dtdd static-dtdd">
                       <img src="assets/does-the-dog-die.png" alt="Picture of Desktop Mac and Tablet with screenshot of does the dog die react project">
                   </div>
-                  <div class="gifs desktop">
+                  <div class="gifs-dtdd desktop-dtdd dem">
                       <video width="100%" height="auto" autoplay loop preload="auto" class="vid">
-                          <source src="assets/does-the-dog-die-desktop.mp4" type="video/mp4">
+                          <source data-src="assets/does-the-dog-die-desktop.mp4" type="video/mp4">
                       </video>
                   </div>
-                  <div class="gifs mobile">
+                  <div class="gifs-dtdd mobile-dtdd dem">
                       <video width="100%" height="auto" autoplay loop preload="auto" class="vid">
-                          <source src="assets/does-the-dog-die-mobile.mp4" type="video/mp4">
+                          <source data-src="assets/does-the-dog-die-mobile.mp4" type="video/mp4">
                       </video>
                   </div>
 
@@ -506,16 +515,16 @@
                 
                 <div class="demos">
                   <div class="click-options">
-                    <div class="static-demo">
-                      <p class="static-txt">Static</p>
+                    <div class="dtdd-static">
+                      <p class="static-txt dtdd">Static</p>
                     </div>
                     <p> | </p>
-                    <div class="desktop-demo">
-                      <p class="desktop-txt">Desktop Demo</p>
+                    <div class="dtdd-desktop">
+                      <p class="desktop-txt dtdd">Desktop Demo</p>
                     </div>
                     <p> | </p>
-                    <div class="mobile-demo">
-                      <p class="mobile-txt">Mobile Demo</p>
+                    <div class="dtdd-mobile">
+                      <p class="mobile-txt dtdd">Mobile Demo</p>
                     </div>
                   </div>
                 </div>
@@ -533,6 +542,7 @@
               </div>
             </div>
           </div> 
+          <!-- End -of- does the dog die-->
           <div class="show-case-arrow">
               <span class="scroll-arrows one"></span>
               <span class="scroll-arrows two"></span>
@@ -541,7 +551,10 @@
 
           <!-- START -of- average joe-->
           <div class="showcase-container">    
- 
+            <div data-aos="fade-left" data-aos-duration="1500" class="showcase-pic mobile-showcase-pic">
+              <img src="assets/average-joe.png" alt="Picture of Desktop Mac and Tablet with screenshot of average joe website project">
+            </div>
+
             <div data-aos="fade-right" data-aos-duration="1500" class="showcase-description">
               <h5>average joe</h5>
               <p class="langs"><span>REACT</span> | <span>REST APIs</span> | <span>JAVASCRIPT</span> | <span>HTML</span> | <span>AGENCY STYLE</span> |<br><span>TEAM PROGRAMMING</span></p>
@@ -558,17 +571,17 @@
                 
 
                 <div class="gifs-container">
-                    <div class="gifs static">
+                    <div class="gifs-aj static-aj">
                         <img src="assets/average-joe.png" alt="Picture of Desktop Mac and Tablet with screenshot of average joe website project">
                     </div>
-                    <div class="gifs desktop">
-                        <video width="100%" height="auto" autoplay loop preload="auto" class="vid">
-                            <source src="assets/average-job-desktop.mp4" type="video/mp4">
+                    <div class="gifs-aj desktop-aj dem">
+                        <video width="100%" height="auto" autoplay muted loop preload="auto" class="vid">
+                            <source data-src="assets/average-job-desktop.mp4" type="video/mp4">
                         </video>
                     </div>
-                    <div class="gifs mobile">
-                        <video width="100%" height="auto" autoplay loop preload="auto" class="vid">
-                            <source src="assets/average-job-mobile.mp4" type="video/mp4">
+                    <div class="gifs-aj mobile-aj dem">
+                        <video width="100%" height="auto" autoplay muted loop preload="auto" class="vid">
+                            <source data-src="assets/average-job-mobile.mp4" type="video/mp4">
                         </video>
                     </div>
   
@@ -576,16 +589,16 @@
                   
                   <div class="demos">
                     <div class="click-options">
-                      <div class="static-demo">
-                        <p class="static-txt">Static</p>
+                      <div class="aj-static">
+                        <p class="static-txt aj">Static</p>
                       </div>
                       <p> | </p>
-                      <div class="desktop-demo">
-                        <p class="desktop-txt">Desktop Demo</p>
+                      <div class="aj-desktop">
+                        <p class="desktop-txt aj">Desktop Demo</p>
                       </div>
                       <p> | </p>
-                      <div class="mobile-demo">
-                        <p class="mobile-txt">Mobile Demo</p>
+                      <div class="aj-mobile">
+                        <p class="mobile-txt aj">Mobile Demo</p>
                       </div>
                     </div>
                   </div>
@@ -737,10 +750,10 @@
     <footer>
       <p>Copyright 2019 &copy; Cheryl Leung</p>
     </footer>
-
-    <script src="script/lib-animejs/anime.min.js"></script>
-    <script src="script/lib-typedjs/typed.min.js"></script>
     
+    
+    
+    <script src="script/lib-animejs/anime.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="script/ScrollMagic.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

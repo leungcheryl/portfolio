@@ -83,12 +83,18 @@
     margin-top: 5%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 
 .gifs-ds,
 .gifs-ckr,
-.gifs-faa {
+.gifs-faa,
+.gifs-zw,
+.gifs-ac,
+.gifs-dtdd,
+.gifs-aj {
     text-align: center;
     margin: 0 auto;
     display: none;
@@ -96,7 +102,11 @@
 
 .static-ds,
 .static-ckr,
-.static-faa {
+.static-faa,
+.static-zw,
+.static-ac,
+.static-dtdd,
+.static-aj  {
     display: block;
 }
 
@@ -148,9 +158,9 @@
     font-size: 0;
     border-radius: 15px;
     border: 10px solid white;
-    background: #151515 url(../assets/preloader.gif) center center no-repeat;
+    background: #151515 url(../assets/preloader.svg) center center no-repeat;
 }
 
 .loading {
-    background: #151515 url(../assets/preloader.gif) center center no-repeat;
+    background: #151515 url(../assets/preloader.svg) center center no-repeat;
 }

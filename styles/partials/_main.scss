@@ -18,6 +18,10 @@ body {
     }
 }
 
+#typed-strings {
+    visibility: hidden;
+}
+
 .typed-cursor {
     opacity: 0;
     display: none;

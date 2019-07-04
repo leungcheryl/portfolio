@@ -301,6 +301,9 @@ body {
     -webkit-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite; }
 
+#typed-strings {
+  visibility: hidden; }
+
 .typed-cursor {
   opacity: 0;
   display: none; }
@@ -1168,7 +1171,7 @@ i {
   align-items: center;
   margin-bottom: 1%; }
   .arrow-with-line .vertical-line {
-    border-right: rgba(255, 255, 255, 0.7) 1px solid;
+    border-right: rgba(255, 255, 255, 0.7) 1.1px solid;
     height: 170px; }
 
 .arrow-main {
@@ -1338,7 +1341,7 @@ footer {
     padding: 0.5% 0;
     letter-spacing: 2px; }
 
-@media (max-width: 1400px) {
+@media (max-width: 1350px) {
   .desktop-title {
     display: none; }
   .mq-title-1 {

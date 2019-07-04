@@ -490,6 +490,9 @@ function demoMobileAj() {
   }
 }
 
+// hello is this updating. 
+
+
 if (detector.mobile() === null) {
   let sources = document.querySelectorAll('video source');
   let video = document.querySelector('video');
